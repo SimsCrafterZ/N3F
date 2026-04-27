@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<!-- IMPORTANT : corrige le zoom -->
+<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Nintendo 3DS Bookmarks</title>
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+    background: #dcdcdc;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrage */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenu */
+.container {
+    width: 320px;
+    background: #f2f2f2;
+}
+
+/* Header */
+.header {
+    background: #e5e5e5;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 12px;
+}
+
+.header img {
+    height: 16px;
+    margin-right: 6px;
+}
+
+/* Amiibo */
+.amiibo {
+    background: #000;
+    color: white;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.amiibo img {
+    height: 26px;
+    margin-right: 10px;
+}
+
+/* Menu */
+.menu-item {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 14px;
+    font-size: 18px;
+    color: #888;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer-logos {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.footer-logos img {
+    height: 28px;
+    margin: 0 10px;
+}
+
+.footer {
+    text-align: center;
+    color: #888;
+    font-size: 11px;
+    padding-bottom: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="nintendo.png">
+    Nintendo 3DS Bookmarks
+    </div>
+
+    <div class="amiibo" onclick="goLink()">
+        <img src="amiibo.png">
+        amiibo
+    </div>
+
+    <div class="menu-item" onclick="goLink()">
+        <img src="games.png">
+        Games
+    </div>
+
+    <div class="menu-item" onclick="goLink()">
+        <img src="news.png">
+        News
+    </div>
+
+    <div class="menu-item" onclick="goLink()">
+        <img src="support.png">
+        Support
+    </div>
+
+    <div class="footer-logos">
+        <img src="wiiu.png">
+        <img src="eshop.png">
+    </div>
+
+    <div class="footer">
+        © 2015 Nintendo
+    </div>
+
+</div>
+
+<script>
+function goLink() {
+    window.location.href = "https://example.com";
+}
+</script>
+
+</body>
+</html>
